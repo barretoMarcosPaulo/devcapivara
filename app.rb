@@ -4,7 +4,7 @@ class ApplicationController < Sinatra::Base
   configure do
     set :allow_methods, [:get, :post, :options]
     set :public_folder, 'public'
-    ste :port , 80
+    set :port , 80
     set :views, 'views'
   end
   get '/' do
